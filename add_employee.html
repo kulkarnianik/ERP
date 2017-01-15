@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+
+
+<body>
+
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 ">
+                <h2 class="pghdgs">Add new employee</h2>
+            </div>
+        </div>
+
+        <div class="row" ng-cloak>
+            <div class="col-sm-6 col-sm-offset-3 ">
+                <div class="alert alert-danger" ng-show="response.responseText != 'OK' && response.responseText != null">
+                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                    <strong>Oops!</strong> {{response.responseText}}
+                </div>
+                
+                <div class="alert alert-success" ng-show="showProgress">
+                    Processing .. Please wait ..
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 ">
+                <br>
+                <div id="page1">
+                    <ng-form name="form1">
+                        <!--<div class=" form-group">
+                            <label for="usr">Employee number</label>
+                            <input type="number" class="form-control">
+                        </div>-->
+                        <div class=" form-group">
+                            <label for="pwd">Name</label>
+                            <input type="text" name="name" class="form-control" ng-model="employee.name" ng-required="true">
+                            <p style="color:red" ng-show="form1ShowErrors && form1.name.$invalid">Please Enter valid employee name</p>
+                        </div>
+                        <!-- <div class=" form-group">
+                            <label for="pwd">Middle</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class=" form-group">
+                            <label for="pwd">Last Name</label>
+                            <input type="text" class="form-control">
+                        </div>-->
+                        <div class=" form-group">
+                            <label for="pwd">Email</label>
+                            <input type="email" name="email" class="form-control" ng-model="employee.email" ng-required="true">
+                            <p  style="color:red" ng-show="form1ShowErrors && form1.email.$invalid">Please Enter valid employee email</p>
+                        </div>
+                        <div class=" form-group">
+                            <label for="pwd">Current designation</label>
+                            <input type="text" name="designation" class="form-control" ng-model="employee.designation" ng-required="true">
+                            <p style="color:red" ng-show="form1ShowErrors && form1.designation.$invalid">Please Enter valid employee designation</p>
+                        </div>
+                        <div class=" form-group">
+                            <label for="pwd">Current level</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class=" form-group">
+                            <label for="pwd">Department / Function</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class=" form-group">
+                            <label for="pwd">Reporting to</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class=" form-group">
+                            <label for="pwd">Location</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class=" form-group">
+                            <label for="pwd">Qualification</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class=" form-group">
+                            <label for="pwd">Previous experience details</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class=" form-group">
+                            <label for="pwd">Employee type</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class=" form-group">
+                            <label for="usr">Joining date</label>
+                            <input type="date" class="form-control">
+                        </div>
+
+
+                        <button type="button" class="btn btn-secondary btn-lg btn-block " ng-click="showPage2(form1.$valid)">Next</button>
+                    </ng-form>
+                </div>
+
+                <div id="page2">
+                    <ng-form name="form2">
+                        <div class=" form-group">
+                            <label for="usr">Employee Pan number</label>
+                            <input type="number" class="form-control">
+                        </div>
+                        <div class=" form-group">
+                            <label for="usr">Employee account number</label>
+                            <input type="number" class="form-control">
+                        </div>
+                        <div class=" form-group">
+                            <label for="pwd">Bank name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class=" form-group">
+                            <label for="pwd">Provident fund (PF) number</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </ng-form>
+
+                    <button type="button" class="btn btn-secondary btn-lg btn-block" ng-click="saveEmployee(form2.$valid)">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</html>

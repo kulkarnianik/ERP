@@ -1,0 +1,318 @@
+body{
+    font-family: "Lato", sans-serif !important;
+    font-size: 20px;
+    color: rgb(64,64,64);
+   
+}
+
+/*FIRST PAGE*/
+
+h3{
+    font-size: 22px;
+}
+#logo{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+/*.stynav{
+    background-color: white;
+    height: 60px;
+    font-size: 20px;
+    
+}
+#navoptions {
+    padding: 5px 20px 0px 20px;
+}
+#navoptions li{
+    padding-left: 20px;
+}
+.navbar-brand{
+     height: 60px !important;
+    padding-top: 10px
+}*/
+.navba{
+    width: auto;
+    height: 70px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgb(200,200,200); 
+}
+
+.lis1{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.lis2{
+    text-decoration: none !important;
+    float: right;
+    height: 70px;
+    width: 180px;
+    text-align: right;
+    color: rgb(64,64,64);
+    padding:15px 25px;
+    margin: auto;
+    
+}
+
+.logintx{
+    text-decoration: none !important;
+    float: right;
+    height: 70px;
+    padding: 0 18px;
+    color: rgb(64,64,64);
+    padding: 20px 5px;
+    margin-right: -50px;
+        0px;
+    padding-bottom: 5px;
+}
+
+.backg{
+   background-color: rgb(177,213,239); 
+}
+
+
+.splashline{
+    
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px; 
+}
+
+#spltxt{
+    padding-top: 5px;
+    font-size: 300%;
+    font-weight: 500 !important;
+}
+#splinfo{
+    margin-top: 0px;
+    display: block;
+   
+}
+.teamim{
+    width:auto;
+    
+    text-align: center;
+    padding-bottom: 15px;
+}
+.teamtxt{
+    display: block;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 20px;
+    
+    
+}
+.calim{
+    height: 160px;
+    width: auto;
+    text-align: center;
+    padding-top: 0px;
+    
+}
+
+.cominfo{
+    text-align: left;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+.form-control{
+    margin-top: -5px;
+    padding: inherit;
+    height: 40px;
+    font-size: 25px;
+    color: rgb(64,64,64);
+    border-color: rgb(64,64,64);
+    border-width: medium;
+    box-shadow: none;
+}
+.btn{
+    width: 180px;
+    font-weight: 600;
+    background-color: rgb(177,213,239);
+    float: right;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#closbtn{
+    margin-top: 5px ;
+    margin-right: -5px;
+    opacity: 0.8;
+    float: right;
+}
+
+.foocls{
+    height: 120px !important;
+    background-color: white;
+    bottom: 0px;
+    position:relative
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 30px;
+    margin-top: 10px;
+    
+}
+
+/*LOGIN PAGE*/
+
+.logbackg{
+   background-color: rgb(177,213,239); 
+   
+    margin-bottom: 25px;
+}
+
+.btnbrd{
+    border-color: rgb(64,64,64);
+    border-width: medium;
+}
+.btnprt{
+    border-color: rgb(64,64,64);
+    border-width: medium;
+    width: auto;
+    background-color: white;
+    float: left;
+   
+}
+
+/*DASHBOARD PAGE*/
+.tpband{
+    height: 60px;
+    width: auto;
+    background-color: rgb(177,213,239);
+    margin-bottom: -10px;
+    text-align: left;
+     
+}
+#backbtn{
+   margin-top: 5px;
+}
+.dashimgs{
+    text-align: center ;
+    display: block;
+    width: auto;
+    
+}
+
+
+.pghdgs{
+    text-align: left;
+    padding-bottom: 20px;
+    display: block;
+   
+}
+.txtdas{
+    margin-top: 10px;
+   padding-bottom: 10px;
+    text-align: center;
+}
+.levcol{
+    height: 900px;
+    background-color: rgb(177,213,239);
+    align-content: center;
+}
+
+#foo{
+    position: relative;
+    background-color: white;
+    height: 100px;
+    box-shadow: 0 0 5px rgb(200,200,200); 
+    
+}
+/* view leaves page*/
+.distabl{
+    font-size: 20px;
+    text-align: left;
+     
+}
+.btndet{
+    padding: 0px;
+    margin: -1px;
+    width: 90px;
+    height: 35px;
+    font-size: 18px;
+    background-color: white;
+    border-color: rgb(64,64,64);
+    border-width: medium;
+}
+.btnpdf{
+    padding: 0px;
+    margin: -1px;
+    width: 120px;
+    height: 35px;
+    font-size: 18px;
+    background-color: white;
+    border-color: rgb(64,64,64);
+    border-width: medium;
+    
+}
+.yearn{
+    display: block;
+    text-align: right;
+    
+    
+}
+.levcard{
+    height: auto;
+    
+    border-style: solid;
+    border-color: rgb(64,64,64);
+    border-width: medium;
+    margin-bottom: 20px;
+}
+
+
+.crs {
+    opacity: 0.2; 
+    width:auto;
+    text-align: center;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+}
+.crs:focus, .crs:active{
+   opacity: 1; 
+   outline:none;
+   border:none;
+   transition: opacity 0.9s;
+
+}
+
+.btnmod_allign{
+    float: left;
+}
+
+.modal-content{
+    font-family: "Lato", sans-serif !important;
+    font-size: 20px;
+    color: rgb(64,64,64);
+    background-color: white;
+    border-radius: 3px;
+    
+}
+
+.dropdown-menu{
+    font-family: "Lato", sans-serif !important;
+    font-size: 20px;
+    color: rgb(64,64,64);
+    background-color: white;
+    border-radius: 3px;
+    text-align: center;
+}
+
+
+
+
+.btnsty {
+  border: none;
+  background: none;
+}
+
+dropdown-menu:hover{
+   
+}
+
+

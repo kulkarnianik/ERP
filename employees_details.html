@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+
+
+<body>
+
+    <div class="row">
+
+
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 ">
+                <h2 class="pghdgs">View employee data</h2>
+            </div>
+
+        </div>
+        
+        <div class="row" ng-cloak>
+            <div class="col-sm-6 col-sm-offset-3 ">
+                <div class="alert alert-danger" ng-show="response.responseText != 'OK' && response.responseText != null">
+                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                    <strong>Oops!</strong> {{response.responseText}}
+                </div>
+                
+                <div class="alert alert-success" ng-show="showProgress">
+                    Processing .. Please wait ..
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-8 col-sm-offset-2 ">
+            <div class="table-responsive">
+                <table class="table distabl table-hover">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Designation</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="emp in response.user.company.employees">
+                            <td>{{emp.id}}</td>
+                            <td>{{emp.name}}</td>
+                            <td>{{emp.email}}</td>
+                            <td>{{emp.designation}}</td>
+                            <td></td>
+                            <td>
+                                <button type="button" class="btn btn-secondary btn-sm btn-block btndet">View</button>
+                            </td>
+
+                            <td>
+                                <button type="button" class="btn btn-secondary btn-sm btn-block btnpdf">Edit Profile</button>
+                            </td>
+
+                            <td>
+                                <button type="button" class="btn btn-secondary btn-sm btn-block btnpdf" data-toggle="modal" data-target="#myModal">Delete Profile</button>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog ">
+
+            <!-- Modal content-->
+            <div class="modal-content" style="text-align: center;">
+                <div class="modal-header" style="border:none">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to delete employee profile?
+                        <br>All employee data will be erased as well.
+                        <br>
+                        <br>Its advisable to take a backup by saving profile as pdf first.</p>
+                </div>
+                <div class="modal-footer" style="border:none">
+                    <!--<button type="button" class="btn btn-secondary btn-lg btn-block btnmod_allign" data-dismiss="modal">No</button>-->
+
+                    <button type="button" class="btn btn-secondary btn-lg btn-block " data-dismiss="modal">Delete profile</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</html>
