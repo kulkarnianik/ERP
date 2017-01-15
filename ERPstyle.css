@@ -40,32 +40,32 @@ h3{
 
 .lis1{
     margin: 0px;
-    padding: 0px;
+    
     list-style: none;
+    
 }
 
 .lis2{
     text-decoration: none !important;
     float: right;
     height: 70px;
-    width: 180px;
+    width: 160px;
     text-align: right;
     color: rgb(64,64,64);
     padding:15px 25px;
     margin: auto;
     
+    
 }
 
 .logintx{
-    text-decoration: none !important;
+   
     float: right;
-    height: 70px;
-    padding: 0 18px;
+     text-decoration: none !important;
+   
     color: rgb(64,64,64);
-    padding: 20px 5px;
-    margin-right: -50px;
-        0px;
-    padding-bottom: 5px;
+    padding-top: 20px;
+    
 }
 
 .backg{
@@ -316,3 +316,22 @@ dropdown-menu:hover{
 }
 
 
+
+.login {
+    margin-right: 50px;
+}
+
+.lgin {
+    padding-right: 30px;
+}
+
+.lis_login {
+     margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none !important;
+    float: right;
+    height: 70px;
+    width: 10px;
+    text-align: left; !important
+}
